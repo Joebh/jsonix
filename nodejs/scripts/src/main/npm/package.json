@@ -1,6 +1,6 @@
 {
 	"name": "jsonix",
-	"version": "${project.version}",
+	"version": "3.0.1-SNAPSHOT",
 	"description": "Jsonix (JSON interfaces for XML) is a JavaScript library which allows converting between XML and JSON structures.",
 	"keywords": [
 		"json",
@@ -20,41 +20,46 @@
 		"jaxb",
 		"jsonix"
 	],
-	"homepage": "http://github.com/highsource/jsonix",
+	"homepage": "http://github.com/Joebh/jsonix",
 	"bugs": {
-		"url": "http://github.com/highsource/jsonix/issues"
+		"url": "http://github.com/Joebh/jsonix/issues"
 	},
 	"licenses": [
 		{
 			"type": "BSD-3-Clause",
-			"url": "http://github.com/highsource/jsonix/raw/master/LICENSE"
+			"url": "http://github.com/Joebh/jsonix/raw/master/LICENSE"
 		}
 	],
 	"author": {
 		"name": "Alexey Valikov",
-		"url": "http://github.com/highsource"
+		"url": "http://github.com/Joebh"
 	},
 	"contributors": [
 		{
 			"name": "Conrad Pankoff",
 			"url": "https://github.com/deoxxa"
+		},
+		{
+			"name": "Joseph Helfert",
+			"url": "https://github.com/Joebh"
 		}
 	],
 	"main": "jsonix.js",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/mitre/jsonix.git"
+		"url": "http://github.com/Joebh/jsonix.git"
 	},
+	"types": "./types/main.d.ts",
 	"scripts": {
 		"test": "nodeunit tests/tests.js"
 	},
 	"dependencies": {
-		"amdefine": "0.x.x",
-		"xmldom": ">=0.1.21",
-		"xmlhttprequest": "1.x.x"
+		"@xmldom/xmldom": "^0.8.2",
+		"amdefine": "^0.0.4",
+		"xmlhttprequest": "^1.8.0"
 	},
 	"devDependencies": {
-		"nodeunit": "0.x.x",
-		"node-static": "0.x.x"
+		"node-static": "^0.7.11",
+		"nodeunit": "^0.11.3"
 	}
 }

@@ -11,20 +11,20 @@ if (typeof require === 'function') {
 		// If we're not in browser
 		if (typeof window === 'undefined')
 		{
-			// Require xmldom, xmlhttprequest and fs
-			define(["xmldom", "xmlhttprequest", "fs"], _jsonix_factory);
+			// Require @xmldom/xmldom, xmlhttprequest and fs
+			define(["@xmldom/xmldom", "xmlhttprequest", "fs"], _jsonix_factory);
 		}
 		else
 		{
 			// We're probably in browser, maybe browserify
-			// Do not require xmldom, xmlhttprequest as they'r provided by the browser
+			// Do not require @xmldom/xmldom, xmlhttprequest as they'r provided by the browser
 			// Do not require fs since file system is not available anyway
 			define([], _jsonix_factory);
 		}
 	}
 	else {
 		// Otherwise assume we're in the browser/RequireJS environment
-		// Load the module without xmldom and xmlhttprequests dependencies
+		// Load the module without @xmldom/xmldom and xmlhttprequests dependencies
 		define([], _jsonix_factory);
 	}
 }

@@ -8,7 +8,7 @@
 		<artifactId>jsonix-nodejs-tests</artifactId>
 		<version>3.0.1-SNAPSHOT</version>
 	</parent>
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -37,12 +37,8 @@
 							</arguments>
 						</configuration>
 					</execution>
-					<!--execution>
-						<id>test</id>
-						<phase>test</phase>
-					</execution-->
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 </project>

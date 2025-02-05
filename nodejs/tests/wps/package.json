@@ -10,8 +10,8 @@
 		"jsonix": "file:../../scripts/jsonix-3.0.1-SNAPSHOT.tgz"
 	},
 	"devDependencies": {
-		"nodeunit": "~0.8.6",
-		"node-static": "~0.7.3"
+		"node-static": "~0.7.3",
+		"nodeunit": "~0.8.6"
 	},
 	"scripts": {
 		"prepublish": "java -jar node_modules/jsonix/lib/jsonix-schema-compiler-full.jar -catalog catalog/catalog.cat -extension -d mappings schemas/ogc/wps/1.0.0/wpsAll.xsd -b bindings/bindings.xjb",

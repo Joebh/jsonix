@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>jsonix-scripts</artifactId>
 	<packaging>jar</packaging>
@@ -40,6 +42,13 @@
 		</testResources>
 		<plugins>
 			<plugin>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-utils</artifactId>
+						<version>3.5.1</version>
+					</dependency>
+				</dependencies>
 				<groupId>net.alchim31.maven</groupId>
 				<artifactId>yuicompressor-maven-plugin</artifactId>
 				<executions>
@@ -71,10 +80,14 @@
 						</goals>
 						<configuration>
 							<fileSetDescriptors>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/Header.scripts</fileSetDescriptor>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/SingleFile.scripts</fileSetDescriptor>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/Jsonix.scripts</fileSetDescriptor>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/Footer.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/Header.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/SingleFile.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/Jsonix.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/Footer.scripts</fileSetDescriptor>
 							</fileSetDescriptors>
 							<sourceDirectory>${project.build.directory}/scripts</sourceDirectory>
 							<targetDirectory>${project.build.outputDirectory}</targetDirectory>
@@ -90,10 +103,14 @@
 						</goals>
 						<configuration>
 							<fileSetDescriptors>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/Header.scripts</fileSetDescriptor>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/SingleFile.scripts</fileSetDescriptor>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/Jsonix.scripts</fileSetDescriptor>
-								<fileSetDescriptor>src/main/resources/org/hisrc/jsonix/Footer.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/Header.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/SingleFile.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/Jsonix.scripts</fileSetDescriptor>
+								<fileSetDescriptor>
+									src/main/resources/org/hisrc/jsonix/Footer.scripts</fileSetDescriptor>
 							</fileSetDescriptors>
 							<sourceDirectory>${project.build.directory}/compressed-scripts</sourceDirectory>
 							<targetDirectory>${project.build.outputDirectory}</targetDirectory>
@@ -114,7 +131,9 @@
 						</goals>
 						<configuration>
 							<target>
-								<taskdef name="jslint" classname="com.googlecode.jslint4java.ant.JSLintTask" classpathref="maven.plugin.classpath" />
+								<taskdef name="jslint"
+									classname="com.googlecode.jslint4java.ant.JSLintTask"
+									classpathref="maven.plugin.classpath" />
 								<jslint encoding="UTF-8">
 									<formatter type="plain" />
 									<fileset dir="${basedir}/src/main/javascript" includes="**/*.js" />
@@ -156,7 +175,7 @@
 						<id>maven-assembly</id>
 						<phase>package</phase>
 						<goals>
-							 <goal>attached</goal>
+							<goal>attached</goal>
 						</goals>
 						<configuration>
 							<descriptors>
@@ -179,12 +198,14 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.outputDirectory}/org/hisrc/jsonix/Jsonix-all.js</file>
+									<file>
+										${project.build.outputDirectory}/org/hisrc/jsonix/Jsonix-all.js</file>
 									<type>js</type>
 									<classifier>all</classifier>
 								</artifact>
 								<artifact>
-									<file>${project.build.outputDirectory}/org/hisrc/jsonix/Jsonix-min.js</file>
+									<file>
+										${project.build.outputDirectory}/org/hisrc/jsonix/Jsonix-min.js</file>
 									<type>js</type>
 									<classifier>min</classifier>
 								</artifact>
@@ -196,7 +217,9 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This
+				plugin's configuration is used to store Eclipse m2e settings only. It has no
+				influence on the Maven build itself.-->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>

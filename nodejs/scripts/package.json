@@ -1,6 +1,6 @@
 {
-	"name": "@mitre/jsonix",
-	"version": "3.0.7",
+	"name": "jsonix",
+	"version": "3.0.1-SNAPSHOT",
 	"description": "Jsonix (JSON interfaces for XML) is a JavaScript library which allows converting between XML and JSON structures.",
 	"keywords": [
 		"json",
@@ -20,30 +20,34 @@
 		"jaxb",
 		"jsonix"
 	],
-	"homepage": "http://github.com/mitre/jsonix",
+	"homepage": "http://github.com/Joebh/jsonix",
 	"bugs": {
-		"url": "http://github.com/mitre/jsonix/issues"
+		"url": "http://github.com/Joebh/jsonix/issues"
 	},
 	"licenses": [
 		{
 			"type": "BSD-3-Clause",
-			"url": "http://github.com/highsource/jsonix/raw/master/LICENSE"
+			"url": "http://github.com/Joebh/jsonix/raw/master/LICENSE"
 		}
 	],
 	"author": {
 		"name": "Alexey Valikov",
-		"url": "http://github.com/highsource"
+		"url": "http://github.com/Joebh"
 	},
 	"contributors": [
 		{
 			"name": "Conrad Pankoff",
 			"url": "https://github.com/deoxxa"
+		},
+		{
+			"name": "Joseph Helfert",
+			"url": "https://github.com/Joebh"
 		}
 	],
 	"main": "jsonix.js",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/mitre/jsonix.git"
+		"url": "http://github.com/Joebh/jsonix.git"
 	},
 	"types": "./types/main.d.ts",
 	"scripts": {

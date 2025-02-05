@@ -63,7 +63,7 @@ interface Marshaller { // TODO: generics like marshalString(object:T):string;
   marshalDocument(object: Record<string, unknown>): Element;
 }
 
-declare module '@mitre/jsonix' {
+declare module '@joebh/jsonix' {
   export namespace Jsonix {
     export class Context {
       /**
@@ -71,7 +71,7 @@ declare module '@mitre/jsonix' {
        *
        * @param {any[]} s (description)
        */
-      constructor(s: any[]);
+      constructor(s: any[], options: any);
 
       /**
        * (description)
