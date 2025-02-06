@@ -9,7 +9,7 @@
    <annotation>
       <appinfo source="urn:opengis:specification:gml:schema-xsd:gmlsf:1.0.0">gmlsf.xsd</appinfo>
       <documentation>
-         GML 3.1.1 Simplified Features profile Levels 0 and 1.
+         GML 3.1.2 Simplified Features profile Levels 0 and 1.
          Copyright (c) 2006 Open Geospatial Consortium, Inc.
          All Rights Reserved.
       </documentation>

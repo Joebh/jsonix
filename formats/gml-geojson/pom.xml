@@ -76,7 +76,7 @@
 									<dependencyResource>                                                            
 										<groupId>org.jvnet.ogc</groupId>
 										<artifactId>gml-v_3_1_1-profiles-gmlsfprofile-v_1_0_0-schema</artifactId>
-										<resource>gml/3.1.1/profiles/gmlsfprofile/1.0.0/gmlsf2.xsd</resource>                                  
+										<resource>gml/3.1.2/profiles/gmlsfprofile/1.0.0/gmlsf2.xsd</resource>                                  
 									</dependencyResource>                                                           
 								</schema>                                                                               
 							</schemas>

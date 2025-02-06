@@ -6,8 +6,8 @@
 	],
 	"main": "jsonix-tests-basic.js",
 	"dependencies": {
-		"@joebh/jsonix": "file:../../scripts/joebh-jsonix-3.1.1.tgz",
-		"jsonix": "file:../../scripts/joebh-jsonix-3.1.1.tgz"
+		"@joebh/jsonix": "file:../../scripts/joebh-jsonix-3.1.2.tgz",
+		"jsonix": "file:../../scripts/joebh-jsonix-3.1.2.tgz"
 	},
 	"devDependencies": {
 		"node-static": "0.x.x",

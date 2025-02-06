@@ -5,7 +5,7 @@
 	xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
 	jaxb:extensionBindingPrefixes="xjc inheritance jsonix">
 
-	<jaxb:bindings schemaLocation="gml/3.1.1/profiles/gmlsfprofile/1.0.0/gmlsf2.xsd" 
+	<jaxb:bindings schemaLocation="gml/3.1.2/profiles/gmlsfprofile/1.0.0/gmlsf2.xsd" 
 		node="/xs:schema">
 
 		<jsonix:packageMapping

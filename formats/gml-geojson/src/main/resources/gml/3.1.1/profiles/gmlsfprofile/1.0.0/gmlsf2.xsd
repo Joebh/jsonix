@@ -9,7 +9,7 @@
    <annotation>
       <appinfo source="urn:opengis:specification:gml:schema-xsd:gmlsf:1.0.0">gmlsf2.xsd</appinfo>
       <documentation>
-         GML 3.1.1 Simplified Features profile Level 2.
+         GML 3.1.2 Simplified Features profile Level 2.
          Copyright (c) 2006 Open Geospatial Consortium, Inc.
          All Rights Reserved.
       </documentation>
@@ -884,14 +884,14 @@ A simple link element can be used to implement pointer functionality, and this f
 							<element ref="gml:pointProperty"/>
 							<element ref="gml:pointRep">
 								<annotation>
-									<documentation>Deprecated with GML version 3.1.1. Use "pointProperty" instead. Included for backwards compatibility with GML 3.0.0.</documentation>
+									<documentation>Deprecated with GML version 3.1.2. Use "pointProperty" instead. Included for backwards compatibility with GML 3.0.0.</documentation>
 								</annotation>
 							</element>
 						</choice>
 						<element ref="gml:posList"/>
 						<element ref="gml:coordinates">
 							<annotation>
-								<documentation>Deprecated with GML version 3.1.1. Use "posList" instead.</documentation>
+								<documentation>Deprecated with GML version 3.1.2. Use "posList" instead.</documentation>
 							</annotation>
 						</element>
 						<element ref="gml:coord" minOccurs="4" maxOccurs="unbounded">
@@ -1053,7 +1053,7 @@ A simple link element can be used to implement pointer functionality, and this f
 						<element ref="gml:pos"/>
 						<element ref="gml:coordinates">
 							<annotation>
-								<documentation>Deprecated with GML version 3.1.1 for coordinates with ordinate values that are numbers. Use "pos" 
+								<documentation>Deprecated with GML version 3.1.2 for coordinates with ordinate values that are numbers. Use "pos" 
 								instead. The "coordinates" element shall only be used for coordinates with ordinates that require a string 
 								representation, e.g. DMS representations.</documentation>
 							</annotation>
@@ -1080,7 +1080,7 @@ A simple link element can be used to implement pointer functionality, and this f
 	<!-- ============================================================== -->
 	<element name="pointRep" type="gml:PointPropertyType">
 		<annotation>
-			<documentation>Deprecated with GML version 3.1.1. Use "pointProperty" instead. Included for backwards compatibility with GML 3.0.0.</documentation>
+			<documentation>Deprecated with GML version 3.1.2. Use "pointProperty" instead. Included for backwards compatibility with GML 3.0.0.</documentation>
 		</annotation>
 	</element>
    <!-- =========================================================== -->
@@ -1219,7 +1219,7 @@ A simple link element can be used to implement pointer functionality, and this f
 							<element ref="gml:pointProperty"/>
 							<element ref="gml:pointRep">
 								<annotation>
-									<documentation>Deprecated with GML version 3.1.1. Use "pointProperty" instead. Included for backwards compatibility 
+									<documentation>Deprecated with GML version 3.1.2. Use "pointProperty" instead. Included for backwards compatibility 
 									with GML 3.0.0.</documentation>
 								</annotation>
 							</element>
@@ -1233,7 +1233,7 @@ A simple link element can be used to implement pointer functionality, and this f
 						<element ref="gml:posList"/>
 						<element ref="gml:coordinates">
 							<annotation>
-								<documentation>Deprecated with GML version 3.1.1. Use "posList" instead.</documentation>
+								<documentation>Deprecated with GML version 3.1.2. Use "posList" instead.</documentation>
 							</annotation>
 						</element>
 					</choice>
@@ -1324,7 +1324,7 @@ A simple link element can be used to implement pointer functionality, and this f
 	<!-- ============================================================== -->
 	<element name="coordinates" type="gml:CoordinatesType">
 		<annotation>
-			<documentation>Deprecated with GML version 3.1.1.</documentation>
+			<documentation>Deprecated with GML version 3.1.2.</documentation>
 		</annotation>
 	</element>
    <!-- =========================================================== -->

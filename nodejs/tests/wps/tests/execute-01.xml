@@ -4,7 +4,7 @@
         <wps:Input>
             <ows:Identifier xmlns:ows="http://www.opengis.net/ows/1.1">geom</ows:Identifier>
             <ows:Title xmlns:ows="http://www.opengis.net/ows/1.1">geom</ows:Title>
-            <wps:Reference mimeType="text/xml; subtype=gml/3.1.1" xlink:href="http://geoserver/wps" xmlns:xlink="http://www.w3.org/1999/xlink" method="POST">
+            <wps:Reference mimeType="text/xml; subtype=gml/3.1.2" xlink:href="http://geoserver/wps" xmlns:xlink="http://www.w3.org/1999/xlink" method="POST">
                 <wps:Body>
                     <wps:Execute version="1.0.0" service="WPS">
                         <ows:Identifier xmlns:ows="http://www.opengis.net/ows/1.1">JTS:intersection</ows:Identifier>
@@ -25,7 +25,7 @@
                             </wps:Input>
                         </wps:DataInputs>
                         <wps:ResponseForm>
-                            <wps:RawDataOutput mimeType="text/xml; subtype=gml/3.1.1">
+                            <wps:RawDataOutput mimeType="text/xml; subtype=gml/3.1.2">
                                 <ows:Identifier xmlns:ows="http://www.opengis.net/ows/1.1">result</ows:Identifier>
                             </wps:RawDataOutput>
                         </wps:ResponseForm>
