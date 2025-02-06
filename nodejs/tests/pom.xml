@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.hisrc.jsonix</groupId>
 		<artifactId>jsonix-nodejs</artifactId>
-		<version>3.0.1-SNAPSHOT</version>
+		<version>3.1.1</version>
 	</parent>
 	<modules>
 		<module>basic</module>
@@ -77,7 +77,7 @@
 							<executable>npm</executable>
 							<arguments>
 								<argument>install</argument>
-								<argument>../../scripts/jsonix-${project.version}.tgz</argument>
+								<argument>../../scripts/joebh-jsonix-${project.version}.tgz</argument>
 							</arguments>
 						</configuration>
 					</execution>
